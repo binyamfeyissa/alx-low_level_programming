@@ -6,12 +6,10 @@
  */
 int main(void)
 {
-int k;
+	int num;
 
-for (k = 48; k <= 57; k++)
-{
-putchar(k);
-}
-putchar('\n');
-return (0);
+	for (num = 48 ; num <= 57 ; num++)
+		putchar(num);
+	putchar('\n');
+	return (0);
 }
