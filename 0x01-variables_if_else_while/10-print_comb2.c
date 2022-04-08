@@ -6,25 +6,23 @@
  */
 int main(void)
 {
-int x, y;
+	int n;
+	int m;
 
-for (x = 48; x <= 57; x++)
-{
-for (y = 48; y <= 57; y++)
-{
-putchar(x);
-putchar(y);
-if (x == 57 && y == 57)
-{
+	for (n = 48 ; n <= 57 ; n++)
+	{
+		for (m = 48 ; m <= 57 ; m++)
+		{
+			putchar(n);
+			putchar(m);
 
-}
-else
-{
-putchar(44);
-putchar(' ');
-}
-}
-}
-putchar('\n');
-return (0);
+			if ((n != 57) || (m != 57))
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
