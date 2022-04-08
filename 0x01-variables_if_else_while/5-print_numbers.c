@@ -6,12 +6,10 @@
  */
 int main(void)
 {
-int r;
+	int num;
 
-for (r = 0; r <= 9; r++)
-{
-printf("%d", r);
-}
-printf("\n");
-return (0);
+	for (num = 0 ; num <= 9 ; num++)
+		printf("%d", num);
+	puts("");
+	return (0);
 }
